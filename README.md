@@ -1,8 +1,8 @@
 ![Zarr.js Logo](docs/logo.png)
 
-[![Actions Status](https://github.com/gzuidhof/zarr.js/actions/workflows/test.yml/badge.svg)](https://github.com/gzuidhof/zarr.js/actions)
-![Top Language Badge](https://img.shields.io/github/languages/top/gzuidhof/zarr.js)
-[![NPM badge](https://img.shields.io/npm/v/zarr)](https://www.npmjs.com/package/zarr)
+[![Actions Status](https://github.com/atmoai/zarr.js/actions/workflows/test.yml/badge.svg)](https://github.com/atmoai/zarr.js/actions)
+![Top Language Badge](https://img.shields.io/github/languages/top/atmoai/zarr.js)
+[![NPM badge](https://img.shields.io/npm/v/%40atmoai%2Fzarr)](https://www.npmjs.com/package/@atmoai/zarr)
 [![Documentation](https://img.shields.io/badge/Read%20the-documentation-1abc9c.svg)](http://guido.io/zarr.js)
 
 ---
@@ -12,12 +12,24 @@ Typescript implementation of [**Zarr**](https://zarr.readthedocs.io/en/stable/).
 ## Quick start
 
 ```
-echo "@atmoai:registry=https://npm.pkg.github.com" >> .npmrc
-npm config set "//npm.pkg.github.com/:_authToken" "$GITHUB_TOKEN"
 npm i @atmoai/zarr
 ```
 
 See the Getting Started section in the [**Documentation**](http://guido.io/zarr.js).
+
+## Publishing (npmjs)
+
+Prerequisites:
+- The `@atmoai` org/scope exists on npmjs and your npm user has publish rights.
+
+From this repo:
+
+```
+npm install
+npm version patch
+npm login
+npm publish --access public
+```
 
 ### Type Docs
 You can generate the type documentation for this project by running `npm run generate-typedocs`.
