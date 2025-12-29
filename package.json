@@ -1,6 +1,10 @@
 {
-  "name": "zarr",
+  "name": "@atmoai/zarr",
   "version": "0.6.3",
+  "repository": "https://github.com/atmoai/zarr.js.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "description": "Javascript implementation of Zarr",
   "keywords": [
     "ndarray",
@@ -44,10 +48,6 @@
   "contributors": [
     "Trevor Manz <trevor.j.manz@gmail.com>"
   ],
-  "repository": {
-    "type": "git",
-    "url": "github.com/gzuidhof/zarr.js"
-  },
   "license": "Apache-2.0",
   "engines": {
     "node": ">=12"
